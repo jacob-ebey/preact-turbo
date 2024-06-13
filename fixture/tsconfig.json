@@ -1,0 +1,16 @@
+{
+  "include": ["env.d.ts", "server.js", "src/**/*"],
+  "compilerOptions": {
+    "types": ["node", "vite/client"],
+    "target": "ES2022",
+    "module": "Node16",
+    "moduleResolution": "Node16",
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
+    "strict": true,
+    "allowJs": true,
+    "checkJs": true,
+    "skipLibCheck": true,
+    "noEmit": true
+  }
+}

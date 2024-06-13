@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "name": "preact-turbo-repo",
+  "license": "ISC",
+  "scripts": {
+    "build": "pnpm --recursive build",
+    "dev": "pnpm --parallel dev",
+    "test": "pnpm --parallel test"
+  },
+  "pnpm": {
+    "overrides": {
+      "react": "npm:@preact/compat",
+      "react-dom": "npm:@preact/compat",
+      "vite": "6.0.0-alpha.18"
+    }
+  }
+}
