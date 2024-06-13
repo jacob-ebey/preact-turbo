@@ -21,8 +21,10 @@ createFromReadableStream(rscStream, {
   },
 })
   .then(({ done, value }) => {
-    hydrate(value as VNode, document);
-    if (import.meta.env.DEV) document.head.append(...devStyles!);
+    requestAnimationFrame(() => {
+      hydrate(value as VNode, document);
+      if (import.meta.env.DEV) document.head.append(...devStyles!);
+    });
     return done;
   })
   .catch(console.error);

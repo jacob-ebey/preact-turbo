@@ -12,6 +12,9 @@
       "react": "npm:@preact/compat",
       "react-dom": "npm:@preact/compat",
       "vite": "6.0.0-alpha.18"
+    },
+    "patchedDependencies": {
+      "preact-render-to-string@6.5.5": "patches/preact-render-to-string@6.5.5.patch"
     }
   }
 }

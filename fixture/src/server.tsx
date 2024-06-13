@@ -8,8 +8,6 @@ import stylesEntry from "bridge:./global.css";
 
 import { InfoDialog } from "./info-dialog.js";
 
-console.log({ InfoDialog });
-
 function Entry({ entry }: { entry: string }) {
   const baseId = entry.replace(/\?.*$/, "");
   if (import.meta.env.PROD && baseId.endsWith(".css")) {

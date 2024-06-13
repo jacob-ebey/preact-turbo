@@ -9,6 +9,11 @@ overrides:
   react-dom: npm:@preact/compat
   vite: 6.0.0-alpha.18
 
+patchedDependencies:
+  preact-render-to-string@6.5.5:
+    hash: nod2nhnlxje6tuye5lv5ywsp44
+    path: patches/preact-render-to-string@6.5.5.patch
+
 importers:
 
   .: {}
@@ -29,7 +34,7 @@ importers:
         version: 10.22.0
       preact-render-to-string:
         specifier: 6.5.5
-        version: 6.5.5(preact@10.22.0)
+        version: 6.5.5(patch_hash=nod2nhnlxje6tuye5lv5ywsp44)(preact@10.22.0)
       preact-turbo:
         specifier: workspace:*
         version: link:../preact-turbo
@@ -85,7 +90,7 @@ importers:
         version: 10.22.0
       preact-render-to-string:
         specifier: 6.5.5
-        version: 6.5.5(preact@10.22.0)
+        version: 6.5.5(patch_hash=nod2nhnlxje6tuye5lv5ywsp44)(preact@10.22.0)
       ts-node:
         specifier: 10.9.2
         version: 10.9.2(@types/node@20.14.2)(typescript@5.4.5)
@@ -2423,7 +2428,7 @@ snapshots:
       picocolors: 1.0.1
       source-map-js: 1.2.0
 
-  preact-render-to-string@6.5.5(preact@10.22.0):
+  preact-render-to-string@6.5.5(patch_hash=nod2nhnlxje6tuye5lv5ywsp44)(preact@10.22.0):
     dependencies:
       preact: 10.22.0
 
